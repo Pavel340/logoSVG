@@ -1,0 +1,59 @@
+@import "bourbon"
+@import "vars.sass"
+
+#waves
+	position: fixed
+	top: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	background: pink
+	.waves__1
+		fill: #f2f2c8
+	.waves__2
+		stroke: #d8d7b1
+		fill: transparent
+	.waves__3
+		stroke: #dad9b3
+		stroke-width: 0.5
+		fill: transparent
+		stroke-dasharray: 3
+
+#logo
+	width: 30%
+	max-height: 120px
+	z-index: 100
+	left: 50%
+	transform: translate(120%, -200px)
+
+//Load Libs SASS
+@import "app/libs/animate/animate.sass"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+//Custom Styles Here
+
+
+//ALWAYS END
+@import "media"
